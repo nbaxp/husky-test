@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "npm run lint:eslint",
+    "lint:eslint": "eslint --ext .js,.ts --fix "
+  },
+  "lint-staged": {
+    "*.{js,ts}": "npm run lint"
+  }
+}
